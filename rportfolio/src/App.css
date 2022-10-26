@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+/* default */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:link, a:visited, a:active {
+  text-decoration:none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* pre */
+.i{
+  display: inline-block;
+}
+
+.bold_font{
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.ligth_font{
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+.letter_spacing{
+  letter-spacing: .1em;
+}
+
+.main_padding{
+  padding:  4vh;
+}
+
+.main_margin{
+  margin: 4vh;
+}
+/* pre */
+
+/* default */
+
+.body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: nowrap;
+  margin-top: 5vh;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.title{
+  font-weight: 200;
+  font-size: 5rem;
+  margin-left: -.4rem;
+  margin-top: -2.3vh;
+  letter-spacing: -.05em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle{
+  font-weight: 500;
+  font-size: 1.1rem;
+  transform: translateY(-.5rem);
 }
+
+.span_home{
+  display: block;
+  line-height: 1.5;
+}
+
+.box{
+  box-sizing: border-box;
+  height: 92vh;
+}
+
+/* .header{
+  margin-top: 2.3vh;
+} */
+
+/* .nav{
+  margin-top: 4vh;
+} */
+
+.li_main{
+  margin-bottom: 1.4vh;
+}
+
+.section_home{
+  position: absolute;
+  bottom: 8vh;
+  right: 8vh;
+  margin-left: 8vh;
+
+}
+
+/* projects */
+
+.Project_li_title{
+  text-align: right;
+  margin-right: .5vw;
+  margin-bottom: 4vh;
+}
+
+.projects_a{
+  display: flex;
+  column-gap: 1vw;
+  align-items: baseline;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+/* .section_projects{
+  margin-right: -.5vw;
+} */
