@@ -8,6 +8,7 @@
   font-family: 'Montserrat', sans-serif;
   list-style: none;
   box-sizing: border-box;
+  user-select: none;
 }
 
 .app{
@@ -100,8 +101,9 @@ button, input[type="submit"], input[type="reset"] {
   margin-top: 4vh;
 } */
 
-.li_main{
+.li_app{
   margin-bottom: 1.4vh;
+  line-height: 1rem;
 }
 
 .section_home{
@@ -181,8 +183,11 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .submit_contact:hover{
-  box-shadow: 3px 0px 30px hsl(0, 0%, 50%);
+  box-shadow: 3px 0px 30px hsl(0, 0%, 60%);
+  background-color: hsl(0, 0%, 60%);
+  opacity: .8;
 }
+
 
 /* theme aside */
 
@@ -205,6 +210,7 @@ button, input[type="submit"], input[type="reset"] {
   flex-flow: row nowrap;
   column-gap: .5vh;
   align-items: center;
+  cursor: pointer;
 }
 
 .aside_font{
@@ -213,6 +219,3 @@ button, input[type="submit"], input[type="reset"] {
   letter-spacing: -.1em;
 }
 
-.aside_symbols{
-
-}

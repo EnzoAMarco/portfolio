@@ -9,10 +9,10 @@ import Projects from './Projects';
 export default function Main({main, theme, bg}) {
 
   const obj  = {
-    home: <Home theme={theme} bg={bg}/>,
-    projects: <Projects theme={theme} bg={bg}/>,
-    info: <Info theme={theme} bg={bg}/>,
-    contact: <Contact theme={theme} bg={bg}/>,
+    Home: <Home theme={theme} bg={bg}/>,
+    Projects: <Projects theme={theme} bg={bg}/>,
+    Info: <Info theme={theme} bg={bg}/>,
+    Contact: <Contact theme={theme} bg={bg}/>,
   }
 
   const dark_light =()=>{

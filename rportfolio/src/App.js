@@ -11,10 +11,32 @@ function App() {
     Border: '#fff'
   }
 
-  const [main, setMain] = useState('contact');
+  const navContent ={
+    Home:'Home',
+    Projects:'Projects',
+    Info:'Info',
+    Contact:'Contact',
+    selectesI:'●'
+  }
+
+  const [main, setMain] = useState('info');
+  const [navText, setnavText] = useState(navContent)
   const [theme, setTheme] = useState(colores.b);
   const [bg, setBg] = useState(colores.w);
   
+  const nav_selected = (section)=>{
+    // console.log();
+    for (let z in navContent){
+      if(z === section){
+        navContent[z] = navContent.selectesI;
+      }else{
+        navContent[z] = z;
+      }
+    }
+    setMain(section);
+    setnavText(navContent);
+  }
+
   const changeTheme = () => {
     if (theme === colores.b){
       setTheme(colores.w);
@@ -41,24 +63,24 @@ function App() {
         <div className='body'>
           <nav className='nav' style={{color: theme}}>
             <ul>
-              <li className='li_main bold_font'>
-                <button onClick={()=>{setMain('home')}}>Home</button>
+              <li className='li_app bold_font'>
+                <button onClick={()=>nav_selected('Home')}>{navText.Home}</button>
               </li>
-              <li className='li_main bold_font'>
-                <button onClick={()=>{setMain('projects')}}>● Projects</button>
+              <li className='li_app bold_font'>
+                <button onClick={()=>nav_selected('Projects')}>{navText.Projects}</button>
               </li>
-              <li className='li_main bold_font'>
-                <button onClick={()=>{setMain('info')}}>Info</button>
+              <li className='li_app bold_font'>
+                <button onClick={()=>nav_selected('Info')}>{navText.Info}</button>
               </li>
-              <li className='li_main bold_font'>
-                <button onClick={()=>{setMain('contact')}}>Contact</button>
+              <li className='li_app bold_font'>
+                <button onClick={()=>nav_selected('Contact')}>{navText.Contact}</button>
               </li>
             </ul>
           </nav>
           <Main main={main} theme={theme} bg={bg}/>
         </div>
       </div>
-      <Aside changeTheme={changeTheme}/>
+      <Aside main={main} theme={theme} changeTheme={changeTheme}/>
     </div>
   );
 }

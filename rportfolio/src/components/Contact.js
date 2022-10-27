@@ -25,7 +25,7 @@ export default function Contact({theme, bg}) {
         onSubmit={handleSubmit(onSubmit)}>
           <div>
             <div className='divs_contact'>
-                <label className='contact_font'>Name</label>
+                <label className='contact_font'>Name:</label>
                 <input  
                 {...register('name')}
                 style={{
@@ -37,7 +37,7 @@ export default function Contact({theme, bg}) {
                 className='inputs_contact iC'  ></input>
             </div>
             <div className='divs_contact'>
-              <label className='contact_font'>Email</label>
+              <label className='contact_font'>Email:</label>
               <input 
               {...register('email', {
                 required:true
@@ -53,7 +53,7 @@ export default function Contact({theme, bg}) {
             </div>
           </div>
           <div className='divs_contact'>
-            <label className='contact_font'>Subject</label>
+            <label className='contact_font'>Subject:</label>
             <input
             {...register('subject', {
               required:true,
@@ -69,7 +69,7 @@ export default function Contact({theme, bg}) {
             {errors.subject?.type === 'required' && <p className='bold_font'>Fill the subject field</p>}
           </div>
           <div className='divs_contact'> 
-            <label className='contact_font'>Message</label>
+            <label className='contact_font'>Message:</label>
             <textarea 
             {...register('message')}
             style={{
