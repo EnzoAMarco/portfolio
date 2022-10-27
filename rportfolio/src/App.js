@@ -1,12 +1,13 @@
 import './App.css';
 import Main from './components/Main';
+import Aside from './components/Aside';
 import React, {useState} from 'react'
 
 function App() {
 
   const colores = {
     w: 'hsl(0, 0%, 90%)',
-    b: 'hsl(0, 0%, 5%)',
+    b: 'hsl(0, 0%, 10%)',
     Border: '#fff'
   }
 
@@ -25,13 +26,17 @@ function App() {
   }
 
   return (
-    <div className="app main_padding" style={{ backgroundColor: bg,
+    <div 
+    className="app main_padding" 
+    style={{ backgroundColor: bg,
     }}>
-      <div className="box main_padding" style={{ backgroundColor: bg ,
-      border: `.5px solid ${theme}`}} >
+      <div 
+      className="box main_padding" 
+      style={{ backgroundColor: bg ,
+      border: `0.1px solid ${theme}`}} >
         <header className='header ' style={{color: theme}}>
           <h1 className='title' >Enzo Marco</h1>
-          <h2 className='subtitle' onClick={()=> changeTheme()}>Designer & Developer</h2>
+          <h2 className='subtitle' >Designer & Developer</h2>
         </header>
         <div className='body'>
           <nav className='nav' style={{color: theme}}>
@@ -53,6 +58,7 @@ function App() {
           <Main main={main} theme={theme} bg={bg}/>
         </div>
       </div>
+      <Aside changeTheme={changeTheme}/>
     </div>
   );
 }

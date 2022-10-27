@@ -14,6 +14,11 @@ export default function Main({main, theme, bg}) {
     info: <Info theme={theme} bg={bg}/>,
     contact: <Contact theme={theme} bg={bg}/>,
   }
+
+  const dark_light =()=>{
+
+  }
+
   // console.log(obj)
   // console.log(obj[main.main], 'obj')
 

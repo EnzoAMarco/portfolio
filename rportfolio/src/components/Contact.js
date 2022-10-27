@@ -49,7 +49,7 @@ export default function Contact({theme, bg}) {
               }}
               type='email' 
               className=' inputs_contact iC'></input>
-              {errors.email?.type === 'required' && <p>Fill the email field</p>}
+              {errors.email?.type === 'required' && <p className='bold_font'>Fill the email field</p>}
             </div>
           </div>
           <div className='divs_contact'>
@@ -66,7 +66,7 @@ export default function Contact({theme, bg}) {
             }}
             type='text' 
             className=' inputs_contact iC'></input>
-            {errors.subject?.type === 'required' && <p>Fill the subject field</p>}
+            {errors.subject?.type === 'required' && <p className='bold_font'>Fill the subject field</p>}
           </div>
           <div className='divs_contact'> 
             <label className='contact_font'>Message</label>
@@ -92,7 +92,7 @@ export default function Contact({theme, bg}) {
             fontWeight:'200',
             padding:'1vh 0'
           }}
-          className='contact_font'
+          className='contact_font submit_contact'
           ></input>
         </form>
       </section>
