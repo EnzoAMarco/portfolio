@@ -6,13 +6,13 @@ import Projects from './Projects';
 
 
 
-export default function Main({main, theme}) {
+export default function Main({main, theme, bg}) {
 
   const obj  = {
-    home: <Home theme={theme}/>,
-    projects: <Projects theme={theme}/>,
-    info: <Info theme={theme}/>,
-    contact: <Contact theme={theme}/>,
+    home: <Home theme={theme} bg={bg}/>,
+    projects: <Projects theme={theme} bg={bg}/>,
+    info: <Info theme={theme} bg={bg}/>,
+    contact: <Contact theme={theme} bg={bg}/>,
   }
   // console.log(obj)
   // console.log(obj[main.main], 'obj')

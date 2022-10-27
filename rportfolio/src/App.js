@@ -10,7 +10,7 @@ function App() {
     Border: '#fff'
   }
 
-  const [main, setMain] = useState('projects');
+  const [main, setMain] = useState('contact');
   const [theme, setTheme] = useState(colores.b);
   const [bg, setBg] = useState(colores.w);
   
@@ -31,7 +31,7 @@ function App() {
       border: `.5px solid ${theme}`}} >
         <header className='header ' style={{color: theme}}>
           <h1 className='title' >Enzo Marco</h1>
-          <h2 className='subtitle' onClick={()=>{changeTheme()}}>Designer & Developer</h2>
+          <h2 className='subtitle' onClick={()=> changeTheme()}>Designer & Developer</h2>
         </header>
         <div className='body'>
           <nav className='nav' style={{color: theme}}>
@@ -50,7 +50,7 @@ function App() {
               </li>
             </ul>
           </nav>
-          <Main main={main} theme={theme}/>
+          <Main main={main} theme={theme} bg={bg}/>
         </div>
       </div>
     </div>
