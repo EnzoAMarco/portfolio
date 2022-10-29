@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import emailjs from 'emailjs-com'
 
 
-export default function Contact({theme, bg}) {
+export default function Contact({theme, bg, transition, setTransition}) {
 
   const { register, formState:{errors}, handleSubmit } = useForm();
   const form = useRef();
@@ -16,16 +16,22 @@ export default function Contact({theme, bg}) {
     console.log(form);
   }
 
+  setInterval(()=>{setTransition('1')}, 300);
+
   return (
-    <main className='main_home main_margin' style={{color: theme}}>
-      <section className='section_home'>
+    <main className='main_home main_margin tA' 
+    style={{
+      color: theme,
+      opacity:transition
+    }}>
+      <section className='section_home tA'>
         <form 
-        className='form_contact'
+        className='form_contact tA'
         ref={form} 
         onSubmit={handleSubmit(onSubmit)}>
           <div>
-            <div className='divs_contact'>
-                <label className='contact_font'>Name:</label>
+            <div className='divs_contact tA'>
+                <label className='contact_font tA'>Name:</label>
                 <input  
                 {...register('name')}
                 style={{
@@ -34,10 +40,10 @@ export default function Contact({theme, bg}) {
                   borderColor:theme
                 }}
                 type='text' 
-                className='inputs_contact iC'  ></input>
+                className='inputs_contact iC tA'  ></input>
             </div>
-            <div className='divs_contact'>
-              <label className='contact_font'>Email:</label>
+            <div className='divs_contact tA'>
+              <label className='contact_font tA'>Email:</label>
               <input 
               {...register('email', {
                 required:true
@@ -48,12 +54,13 @@ export default function Contact({theme, bg}) {
                 borderColor:theme
               }}
               type='email' 
-              className=' inputs_contact iC'></input>
+              className=' inputs_contact iC tA'
+              ></input>
               {errors.email?.type === 'required' && <p className='bold_font'>Fill the email field</p>}
             </div>
           </div>
-          <div className='divs_contact'>
-            <label className='contact_font'>Subject:</label>
+          <div className='divs_contact tA'>
+            <label className='contact_font tA'>Subject:</label>
             <input
             {...register('subject', {
               required:true,
@@ -65,11 +72,12 @@ export default function Contact({theme, bg}) {
               borderColor:theme
             }}
             type='text' 
-            className=' inputs_contact iC'></input>
+            className=' inputs_contact iC tA'
+            ></input>
             {errors.subject?.type === 'required' && <p className='bold_font'>Fill the subject field</p>}
           </div>
-          <div className='divs_contact'> 
-            <label className='contact_font'>Message:</label>
+          <div className='divs_contact tA'> 
+            <label className='contact_font tA'>Message:</label>
             <textarea 
             {...register('message')}
             style={{
@@ -79,7 +87,8 @@ export default function Contact({theme, bg}) {
               outline:'none'
             }}
             type='text' 
-            className='textA_contact'></textarea>
+            className='textA_contact tA'
+            ></textarea>
           </div>
           <input 
           type='submit' 
@@ -92,7 +101,7 @@ export default function Contact({theme, bg}) {
             fontWeight:'200',
             padding:'1vh 0'
           }}
-          className='contact_font submit_contact'
+          className='contact_font submit_contact tA'
           ></input>
         </form>
       </section>

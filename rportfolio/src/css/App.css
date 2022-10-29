@@ -30,6 +30,12 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 /* pre */
+
+.tA{ /* TRANSITION ALL */
+  transition: .8s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 .i{
   display: inline-block;
 }
@@ -43,7 +49,6 @@ button, input[type="submit"], input[type="reset"] {
   font-weight: 200;
   font-size: 4rem;
   letter-spacing: -.05em;
-
 }
 
 .letter_spacing{
@@ -97,13 +102,14 @@ button, input[type="submit"], input[type="reset"] {
   margin-top: 2.3vh;
 } */
 
-/* .nav{
-  margin-top: 4vh;
-} */
+.nav{
+  transition: .1s;
+}
 
 .li_app{
-  margin-bottom: 1.4vh;
+  margin-bottom: 2vh;
   line-height: 1rem;
+  transition: .1s;
 }
 
 .section_home{
@@ -115,9 +121,12 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 /* projects */
-
+/* 
 .Project_li_title{
-  text-align: right;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;  
   margin-right: .5vw;
   margin-bottom: 4vh;
 }
@@ -130,14 +139,32 @@ button, input[type="submit"], input[type="reset"] {
   justify-content: flex-end;
 }
 
+.projects_a:hover{
+  opacity: .85;
+  transition: .2s !important;
+}
+
+.projects_a:hover > .empleador_projects{
+  color: hsl(0, 0%, 50%);
+  transition: .1s !important;
+}
+
+.projects_a:hover > .p_projects{
+  color: hsl(0, 0%, 50%);
+  transition: .1s !important;
+} */
+
 /* .section_projects{
   margin-right: -.5vw;
 } */
 
 /* contact */
-.contact_font{
+
+/* .contact_font{
   font-weight: 200;
   font-size: 3rem;
+  transition: .1s;
+
 }
 
 .form_contact{
@@ -153,6 +180,7 @@ button, input[type="submit"], input[type="reset"] {
   align-items: baseline;
   column-gap: 2em;
   justify-content: flex-end;
+  transition: .1s;
 }
 
 .iC, iC:focus{
@@ -186,7 +214,7 @@ button, input[type="submit"], input[type="reset"] {
   box-shadow: 3px 0px 30px hsl(0, 0%, 60%);
   background-color: hsl(0, 0%, 60%);
   opacity: .8;
-}
+} */
 
 
 /* theme aside */
@@ -219,3 +247,22 @@ button, input[type="submit"], input[type="reset"] {
   letter-spacing: -.1em;
 }
 
+/* responsive */
+
+@media screen and (max-width: 1080px){
+  .title{
+    font-size: 2rem;
+    margin: -1.1vh 0 0 -.2rem ;
+  }
+
+  .subtitle{
+    font-weight: 400;
+    font-size: 1rem;
+    transform: translateY(0);
+  }
+
+  .bold_font{
+    font-size: .8rem;
+    font-weight: 700;
+  }
+}

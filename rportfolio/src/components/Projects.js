@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Projects({theme}) {
+export default function Projects({theme, transition, setTransition}) {
   const projects_info = [
     {
       proyecto: 'Proyecto AKALY',
@@ -40,26 +40,44 @@ export default function Projects({theme}) {
     },
   ]
 
+
   const projectsJsx = () => {
     return projects_info.map((e, i)=>{
       return (
-        <li key={i}>
-          <a className='projects_a' style={{color: theme}} href={e.href} target='_blank' rel="noreferrer"> 
-            <div className='bold_font i empleador_projects'>{e.año} / {e.empleador}</div> 
-            <div className='i letter_spacing ligth_font'>{e.proyecto}</div> 
+        <li key={i} className='tA'>
+          <a className='projects_a tA' style={{color: theme}} href={e.href} target='_blank' rel="noreferrer"> 
+            <div className='bold_font i empleador_projects tA'>{e.año} / {e.empleador}</div> 
+            <div className='i p_projects letter_spacing ligth_font tA'>{e.proyecto}</div> 
           </a>
         </li>
       )
     })
   }
 
-  // console.log(projects_jsx);
+  setInterval(()=>{setTransition('1')}, 300);
 
   return (
-    <main >
-      <section className='section_projects'>
-        <ul>
-          <li className='Project_li_title subtitle'style={{color: theme}}>■ Projects (Design & Develop)</li>
+    <main className='tA'
+    style={{
+      color: theme,
+      opacity:transition
+    }}>
+      <section className='section_projects tA'>
+        <ul className='ul_projects'>
+          <li className='Project_li_title subtitle tA'style={{color: theme}}>
+            <div 
+            className='tA'
+            style={{
+              border:'2px solid',
+              borderColor:theme,
+              height:'1rem',
+              width:'1rem',
+              backgroundColor: theme,
+              marginRight:'1vw',
+            }}
+            ></div>
+            Projects (Design & Develop)
+          </li>
           {projectsJsx()}
         </ul>
       </section>
