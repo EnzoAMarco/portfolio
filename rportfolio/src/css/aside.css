@@ -55,3 +55,24 @@
     letter-spacing: -.1em;
   }
 }
+
+/* surface pro 7 */
+@media screen and (max-width: 920px){
+
+  .main_aside{
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2vw;
+    transform: rotate(-90deg);
+    max-width: 1px;
+    left: calc(3.5vw - .7rem);
+    bottom: 7vw;
+  }
+
+  /* .aside_font{
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: -.1em;
+  } */
+}

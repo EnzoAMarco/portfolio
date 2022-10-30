@@ -266,3 +266,36 @@ button, input[type="submit"], input[type="reset"] {
     font-weight: 700;
   }
 }
+
+/* surface pro 7 */
+@media screen and (max-width: 920px){
+  .main_padding{
+    padding:  4vw;
+  }
+  
+  .main_margin{
+    margin: 4vw;
+  }
+
+  .title{
+    font-size: 3rem;
+    margin: -1.1vh 0 0 -.2rem ;
+  }
+
+  /* .subtitle{
+    font-weight: 400;
+    font-size: 1.5rem;
+    transform: translateY(0);
+  } */
+
+  .bold_font{
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .ligth_font{
+    font-weight: 200;
+    font-size: 3rem;
+    letter-spacing: -.05em;
+  }
+}

@@ -58,3 +58,14 @@
   }
 
 }
+
+/* surface pro 7 */
+@media screen and (max-width: 920px){
+  .projects_a{
+    /* display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: flex-end;
+    justify-content: flex-end; */
+    margin: 2vw;
+  }
+}

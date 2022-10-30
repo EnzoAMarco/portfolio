@@ -63,7 +63,6 @@ export default function Contact({theme, bg, transition, setTransition}) {
             <label className='contact_font tA'>Subject:</label>
             <input
             {...register('subject', {
-              required:true,
               maxLength:30
             })}
             style={{
@@ -74,9 +73,8 @@ export default function Contact({theme, bg, transition, setTransition}) {
             type='text' 
             className=' inputs_contact iC tA'
             ></input>
-            {errors.subject?.type === 'required' && <p className='bold_font'>Fill the subject field</p>}
           </div>
-          <div className='divs_contact tA'> 
+          <div className='divs_contact_text tA'> 
             <label className='contact_font tA'>Message:</label>
             <textarea 
             {...register('message')}
