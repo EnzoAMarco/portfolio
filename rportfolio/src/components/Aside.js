@@ -15,8 +15,8 @@ export default function Aside({changeTheme, theme, bg}) {
         style={{
           border:'2px solid',
           borderColor:theme,
-          height:'.9rem',
-          width:'.9rem',
+          height:'.8rem',
+          width:'.8rem',
           backgroundColor: 'hsl(0, 0%, 90%)'
         }}
         ></div>
@@ -33,8 +33,8 @@ export default function Aside({changeTheme, theme, bg}) {
         style={{
           border:'2px solid',
           borderColor:theme,
-          height:'.9rem',
-          width:'.9rem',
+          height:'.8rem',
+          width:'.8rem',
           backgroundColor: 'hsl(0, 0%, 10%)'
         }}
         ></div>

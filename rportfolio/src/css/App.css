@@ -269,6 +269,12 @@ button, input[type="submit"], input[type="reset"] {
 
 /* surface pro 7 */
 @media screen and (max-width: 920px){
+
+.box{
+  box-sizing: border-box;
+  height: 100%;
+}
+
   .main_padding{
     padding:  4vw;
   }
@@ -298,4 +304,30 @@ button, input[type="submit"], input[type="reset"] {
     font-size: 3rem;
     letter-spacing: -.05em;
   }
+}
+
+@media screen and (max-width: 620px){
+  .main_padding{
+    padding:  4vw;
+  }
+  
+  .main_margin{
+    margin: 4vw;
+  }
+
+  .title{
+    font-size: 2rem;
+    margin: -1.1vh 0 0 -.2rem ;
+  }
+
+  /* .subtitle{
+    font-weight: 400;
+    font-size: 1.5rem;
+    transform: translateY(0);
+  } */
+
+  .bold_font{
+    font-size: .9rem;
+  }
+
 }

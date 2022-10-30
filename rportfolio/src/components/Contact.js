@@ -95,7 +95,7 @@ export default function Contact({theme, bg, transition, setTransition}) {
             border:'1px solid',
             bordercolor:theme,
             marginTop:'4vh',
-            fontSize:'2rem',
+            fontSize:'1.5rem',
             fontWeight:'200',
             padding:'1vh 0'
           }}
