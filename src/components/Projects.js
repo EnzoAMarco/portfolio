@@ -9,6 +9,12 @@ export default function Projects({theme, transition, setTransition}) {
       href:'https://p1codoacodo.netlify.app/',
     },
     {
+      proyecto: 'Portfolio',
+      empleador: 'Personal',
+      año:2022,
+      href:'https://LaPlaceDPF.netlify.app/',
+    },
+    {
       proyecto: 'Proyect Ex I',
       empleador: 'Employer',
       año:'20XX',
@@ -28,12 +34,6 @@ export default function Projects({theme, transition, setTransition}) {
     },
     {
       proyecto: 'Proyect Ex IV',
-      empleador: 'Employer',
-      año:'20XX',
-      href:'#',
-    },
-    {
-      proyecto: 'Proyect Ex V',
       empleador: 'Employer',
       año:'20XX',
       href:'#',
