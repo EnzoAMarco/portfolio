@@ -1,0 +1,71 @@
+.Project_li_title{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;  
+  margin-right: .5vw;
+  margin-bottom: 4vh;
+}
+
+.projects_a{
+  display: flex;
+  column-gap: 1vw;
+  align-items: baseline;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.projects_a:hover{
+  opacity: .85;
+  transition: .2s !important;
+}
+
+.projects_a:hover > .empleador_projects{
+  color: hsl(0, 0%, 50%);
+  transition: .1s !important;
+}
+
+.projects_a:hover > .p_projects{
+  color: hsl(0, 0%, 50%);
+  transition: .1s !important;
+} 
+
+/* projects mediaqueries */
+@media screen and (max-width: 1080px){
+
+  .ul_projects{
+    text-align: right;
+  }
+
+  .projects_a{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 1vh;
+  }
+  
+  .empleador_projects{
+    text-align: right !important;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .ligth_font{
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: -.05em;
+  }
+
+}
+
+/* surface pro 7 */
+@media screen and (max-width: 920px){
+  .projects_a{
+    /* display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: flex-end;
+    justify-content: flex-end; */
+    margin: 2vw;
+  }
+}
