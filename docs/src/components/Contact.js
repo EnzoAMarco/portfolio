@@ -5,14 +5,15 @@ import emailjs from 'emailjs-com'
 
 export default function Contact({theme, bg, transition, setTransition}) {
 
-  const { register, formState:{errors}, handleSubmit } = useForm();
+  const { register, formState:{errors}, handleSubmit, reset } = useForm();
   const form = useRef();
   console.log(form);
 
   const onSubmit = (e) => {
 
     emailjs.sendForm("service_2ga7ksy","template_e6szw5t", form.current, 'edZbTam8u8bby17z-')
-    .then(res=> console.log(res))
+    .then(res=> console.log(res));
+    reset();
     console.log(form);
   }
 
