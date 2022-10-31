@@ -15,7 +15,7 @@
   height: 100vh;
 }
 
-a:link, a:visited, a:active {
+a:link, a:visited, a:active, a:hover {
   text-decoration:none;
 }
 
@@ -84,7 +84,6 @@ button, input[type="submit"], input[type="reset"] {
 .subtitle{
   font-weight: 500;
   font-size: 1rem;
-  letter-spacing: -.1em;
   transform: translateY(-.5rem);
 }
 

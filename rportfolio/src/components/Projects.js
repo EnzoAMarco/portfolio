@@ -3,39 +3,39 @@ import React from 'react'
 export default function Projects({theme, transition, setTransition}) {
   const projects_info = [
     {
-      proyecto: 'Proyecto AKALY',
-      empleador: 'empleador 0',
+      proyecto: 'Estío',
+      empleador: 'Personal',
       año:2022,
+      href:'https://p1codoacodo.netlify.app/',
+    },
+    {
+      proyecto: 'Proyect Ex I',
+      empleador: 'Employer',
+      año:'20XX',
       href:'#',
     },
     {
-      proyecto: 'Proyecto BELPHEGOR',
-      empleador: 'empleador 1',
-      año:2022,
+      proyecto: 'Proyect Ex II ',
+      empleador: 'Employer',
+      año:'20XX',
       href:'#',
     },
     {
-      proyecto: 'Proyecto COLE',
-      empleador: 'empleador 1',
-      año:2022,
+      proyecto: 'Proyect Ex III',
+      empleador: 'Employer',
+      año:'20XX',
       href:'#',
     },
     {
-      proyecto: 'Proyecto DAVID',
-      empleador: 'empleador 1',
-      año:2022,
+      proyecto: 'Proyect Ex IV',
+      empleador: 'Employer',
+      año:'20XX',
       href:'#',
     },
     {
-      proyecto: 'Proyecto LUCY',
-      empleador: 'empleador 1',
-      año:2022,
-      href:'#',
-    },
-    {
-      proyecto: 'Proyecto CP S2',
-      empleador: 'empleador 1',
-      año:2022,
+      proyecto: 'Proyect Ex V',
+      empleador: 'Employer',
+      año:'20XX',
       href:'#',
     },
   ]
@@ -76,7 +76,7 @@ export default function Projects({theme, transition, setTransition}) {
               marginRight:'1vw',
             }}
             ></div>
-            Projects (Design & Develop)
+            Projects (Own Design & Develop)
           </li>
           {projectsJsx()}
         </ul>

@@ -1,6 +1,7 @@
 import './css/App.css';
 import './css/aside.css';
 import './css/projects.css';
+import './css/info.css';
 import './css/contact.css';
 import Main from './components/Main';
 import Aside from './components/Aside';
@@ -63,7 +64,7 @@ function App() {
       border: `0.1px solid ${theme}`}} >
         <header className='header tA' style={{color: theme}}>
           <h1 className='title tA' >Enzo Marco</h1>
-          <h2 className='subtitle tA' >Designer & Developer</h2>
+          <h2 className='subtitle tA' >Front end developer</h2>
         </header>
         <div className='body tA'>
           <nav className='nav tA' style={{color: theme}}>
