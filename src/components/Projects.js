@@ -3,16 +3,22 @@ import React from 'react'
 export default function Projects({theme, transition, setTransition}) {
   const projects_info = [
     {
-      proyecto: 'Estío',
+      proyecto: 'ZUNPIÉR',
       empleador: 'Personal',
-      año:2022,
-      href:'https://p1codoacodo.netlify.app/',
+      año:'2022',
+      href:'https://zunpier.netlify.app/',
     },
     {
       proyecto: 'Portfolio',
       empleador: 'Personal',
       año:2022,
       href:'https://LaPlaceDPF.netlify.app/',
+    },
+    {
+      proyecto: 'Estío',
+      empleador: 'Personal',
+      año:2022,
+      href:'https://p1codoacodo.netlify.app/',
     },
     {
       proyecto: 'Proyect Ex I',
@@ -28,12 +34,6 @@ export default function Projects({theme, transition, setTransition}) {
     },
     {
       proyecto: 'Proyect Ex III',
-      empleador: 'Employer',
-      año:'20XX',
-      href:'#',
-    },
-    {
-      proyecto: 'Proyect Ex IV',
       empleador: 'Employer',
       año:'20XX',
       href:'#',

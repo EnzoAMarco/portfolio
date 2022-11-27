@@ -15,46 +15,40 @@ export default function Home({theme, transition, setTransition}) {
       <section className='section_home bold_font tA'>
         <p className='tA'>
           <span className='span_home tA'>
-            Born in 1994
+            Born in 2002
           </span>
           <span className='span_home tA'>
-            in Osaka, Japan.
+            in Buenos aires, Argentina.
           </span>
           <span className='span_home tA'>
             I believe
           </span>
           <span className='span_home tA'>
-            web design
+          that programming
           </span>
           <span className='span_home tA'>
-            can be more
+            can be seem
           </span>
           <span className='span_home tA'>
-            diverse and inspiring.
+            like a new way 
           </span>
           <span className='span_home tA'>
-            With a mission
+            of thinking 
           </span>
           <span className='span_home tA'>
-            to present
+            about the world
           </span>
           <span className='span_home tA'>
-            the possibilities
+            around us
           </span>
           <span className='span_home tA'>
-            of web design,
+            instead of just
           </span>
           <span className='span_home tA'>
-            I am pursuing
+            writting code
           </span>
           <span className='span_home tA'>
-            new expressions
-          </span>
-          <span className='span_home tA'>
-            through experiments
-          </span>
-          <span className='span_home tA'>
-            and thoughts.
+            on a text editor.
           </span>
         </p>
       </section>

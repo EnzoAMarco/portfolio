@@ -9,7 +9,7 @@ export default function Info({theme, transition, setTransition}) {
     },
     {
       red: 'Linkedin',
-      href: 'www.linkedin.com/in/enzomarco',
+      href: 'https://www.linkedin.com/in/enzomarco',
     },
     {
       red: 'CodeWars',
